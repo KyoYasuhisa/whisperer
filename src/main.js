@@ -14,7 +14,7 @@ library.add(
 Vue.component('fa', FontAwesomeIcon)
 
 import { firestorePlugin } from 'vuefire'          
-import firebase from 'firebase/app'     
+import firebase from 'firebase'     
 import 'firebase/firestore'
 
 Vue.use(firestorePlugin)
