@@ -3,10 +3,7 @@
 		<router-link to="/">
 			<h1>whisp.</h1>
 		</router-link>
-		<div 
-      v-if="currentUser" 
-      class="btns"
-    >
+		<div v-if="currentUser" class="btns">
 			<router-link :to="'/user/'+currentUser.uid">
       	<button :style="'background-image: url('+currentUser.photoURL+')'">
 				</button>	
@@ -18,9 +15,7 @@
         />
       </button>
     </div>
-    <div 
-      v-else 
-      class="btns">
+    <div v-else class="btns">
       <button>
         <fa 
           icon="user"
